@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 
 from app.api.routes.matches import router as matches_router
+from app.api.routes.leagues import router as leagues_router
 
 
 app = FastAPI(
@@ -10,6 +11,7 @@ app = FastAPI(
 )
 
 app.include_router(matches_router)
+app.include_router(leagues_router)
 
 
 @app.get("/", tags=["System"])
