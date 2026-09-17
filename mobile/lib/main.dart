@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'screens/home_screen.dart';
+import 'screens/main_navigation_screen.dart';
 
 void main() {
   runApp(const DddFootballApp());
@@ -26,7 +26,7 @@ class DddFootballApp extends StatelessWidget {
         scaffoldBackgroundColor: const Color(0xFF0B111B),
         fontFamily: 'Arial',
       ),
-      home: const HomeScreen(),
+      home: const MainNavigationScreen(),
     );
   }
 }
